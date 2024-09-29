@@ -1,0 +1,87 @@
+<html></html>
+<head>
+    <title>Greenpower</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-200">
+    <div id="root"></div>
+    <script type="text/babel">
+        const App = () => {
+            return (
+                <div className="bg-purple-700 text-white">
+                    <header className="flex justify-between items-center p-6">
+                        <div className="flex items-center space-x-2">
+                            <div className="bg-green-500 w-8 h-8 rounded-full"></div>
+                            <span className="text-xl font-bold">Greenpower</span>
+                        </div>
+                        <nav className="space-x-6">
+                            <a href="#" className="hover:underline">About</a>
+                            <a href="#" className="hover:underline">Platform</a>
+                            <a href="#" className="hover:underline">Services</a>
+                            <a href="#" className="hover:underline">Contact</a>
+                        </nav>
+                        <div className="space-x-4">
+                            <a href="#" className="hover:underline">Sign in</a>
+                            <a href="#" className="hover:underline">Sign up</a>
+                        </div>
+                    </header>
+                    <main className="text-center py-20">
+                        <h1 className="text-5xl font-bold mb-4">Clean energy for everyday life and future</h1>
+                        <p className="text-lg mb-8">Our methodology opens up a better and cleaner path towards for every consumers</p>
+                        <button className="bg-green-500 text-white py-2 px-6 rounded-full font-bold">Get started</button>
+                    </main>
+                    <section className="flex justify-center items-center py-20 bg-purple-800">
+                        <div className="relative">
+                            <div className="absolute top-0 left-0 w-32 h-32 bg-white opacity-20"></div>
+                            <img src="https://placehold.co/150x150" alt="Person smiling and holding a plant" className="relative z-10 rounded-full"/>
+                        </div>
+                        <div className="ml-8 text-left">
+                            <h2 className="text-2xl font-bold mb-2">Safe and better energy without pollution</h2>
+                        </div>
+                    </section>
+                    <section className="grid grid-cols-3 gap-4 py-20">
+                        <div className="bg-black text-white p-8 text-center">
+                            <h3 className="text-4xl font-bold">20%</h3>
+                            <p>Energy saved</p>
+                        </div>
+                        <div className="bg-black text-white p-8 text-center">
+                            <h3 className="text-4xl font-bold">40%</h3>
+                            <p>Less pollution</p>
+                        </div>
+                        <div className="bg-black text-white p-8 text-center">
+                            <h3 className="text-4xl font-bold">2K</h3>
+                            <p>Happy clients</p>
+                        </div>
+                    </section>
+                    <section className="grid grid-cols-2 gap-4 py-20">
+                        <div>
+                            <img src="https://placehold.co/600x400" alt="Beautiful landscape with mountains and lake" className="w-full h-full object-cover"/>
+                        </div>
+                        <div className="bg-purple-800 text-white p-8">
+                            <h2 className="text-2xl font-bold mb-4">Our mission</h2>
+                            <p>Our Green Mission is to make a positive impact on the environment and future of our planet. We are ready to help you for all setup and installation processes.</p>
+                        </div>
+                    </section>
+                    <footer className="bg-purple-900 text-white py-8">
+                        <div className="text-center">
+                            <p>&copy; 2023 Greenpower. All rights reserved.</p>
+                        </div>
+                    </footer>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
